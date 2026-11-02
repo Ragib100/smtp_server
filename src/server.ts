@@ -19,8 +19,8 @@ app.use(
   })
 );
 
-app.get("api/health", (_req, res) => {
-  res.json({ status: "healthy" });
+app.get("/api/health", (_req, res) => {
+  res.json({ status: "API is running" });
 });
 
 app.use("/api/email", emailRouter);
