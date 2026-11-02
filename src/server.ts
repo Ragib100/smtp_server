@@ -27,7 +27,7 @@ app.use("/api/email", emailRouter);
 
 const PORT = Number(process.env.PORT || 3000);
 
-app.listen(PORT, async () => {
+app.listen(PORT, "0.0.0.0", async () => {
   console.log(`Email service running on port ${PORT}`);
 
   try {
